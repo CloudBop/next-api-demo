@@ -55,7 +55,7 @@ function HomePage() {
         {feedback &&
           feedback.map(comment => {
             return (
-              <li key={comment.id + Math.random()}>
+              <li key={comment.id}>
                 {comment.email} -- {comment.text}
               </li>
             );
