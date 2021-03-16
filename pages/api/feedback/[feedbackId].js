@@ -1,4 +1,4 @@
-import { buildFeedbackFilePath, extractFeedback } from "../api/feedback";
+import { buildFeedbackFilePath, extractFeedback } from "./index";
 
 function handler(req, res) {
   //
