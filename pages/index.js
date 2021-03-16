@@ -16,6 +16,7 @@ function HomePage() {
       method: "POST",
       body: JSON.stringify(reqBody),
       headers: {
+        // tell the server what we're sending
         "Content-Type": "application/json"
       }
     })
