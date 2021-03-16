@@ -2,12 +2,12 @@ import path from "path";
 import fs from "fs";
 // nodejs server side code
 
-function buildFeedbackFilePath() {
+export function buildFeedbackFilePath() {
   // create absolute path to file
   return path.join(process.cwd(), "data", "feedback.json");
 }
 
-function extractFeedback(filePath) {
+export function extractFeedback(filePath) {
   const fileData = fs.readFileSync(filePath);
   const data = JSON.parse(fileData);
   return data;
